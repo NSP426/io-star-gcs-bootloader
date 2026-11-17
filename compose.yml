@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  io-star-gcs-bootloader:
+      build:
+         context: .
+         dockerfile: Dockerfile
+         ssh:
+            - default
+      image: registry.drotek.com/io-star-gcs-bootloader:latest
